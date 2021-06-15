@@ -12,7 +12,7 @@
 #### Home Page
 <p align="center"> 
   <kbd>
-    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/HomePage.gif">
+    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/home.gif">
   </a>
   </kbd>
 </p>
@@ -25,10 +25,26 @@
   </kbd>
 </p>
 
+#### Education Page
+<p align="center"> 
+  <kbd>
+    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/EducationPage.png">
+  </a>
+  </kbd>
+</p>
+
 #### Projects Page
 <p align="center"> 
   <kbd>
     <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/ProjectPage.png">
+  </a>
+  </kbd>
+</p>
+
+#### Contact Page
+<p align="center"> 
+  <kbd>
+    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/ContactPage.png">
   </a>
   </kbd>
 </p>
