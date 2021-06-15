@@ -20,7 +20,7 @@
 #### About Page
 <p align="center"> 
   <kbd>
-    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/AboutPage.png">
+    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/About.png">
   </a>
   </kbd>
 </p>
@@ -36,7 +36,7 @@
 #### Projects Page
 <p align="center"> 
   <kbd>
-    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/ProjectPage.png">
+    <a href="https://imamulkadir.github.io" target="_blank"><img src="website_images/Project.png">
   </a>
   </kbd>
 </p>
