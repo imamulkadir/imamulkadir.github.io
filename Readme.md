@@ -46,8 +46,8 @@
 
 ## Sections 📚
 
-✔️ Intro\
-✔️ Details\
+✔️ Intro
+✔️ Details
 
 ## Tools Used 🛠️
 
