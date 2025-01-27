@@ -1,0 +1,138 @@
+html,
+body {
+  font-family: "Roboto Mono", serif;
+  background-color: #323437;
+  color: #d1d0c5;
+  scroll-behavior: smooth;
+  height: 100vh; /* Ensure the body spans the full height of the viewport */
+  margin: 0; /* Remove default margin to avoid unwanted spacing */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.custom-navbar {
+  background-color: #2c2e31;
+}
+
+.navbar-brand,
+.nav-link {
+  font-size: 1.1rem;
+  color: #d1d0c5;
+}
+
+.nav-link:hover {
+  color: #e2b714;
+}
+
+.nav-space {
+  padding: 0 0.5rem;
+}
+
+.brand-name {
+  font-family: "Freckle Face", serif;
+  font-size: 1.5rem;
+  color: #e2b714;
+}
+
+.hero_img {
+  width: 550px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.edu_card {
+  background-color: #323437;
+  color: #d1d0c5;
+  border-left: 1px solid #e2b714;
+  box-shadow: #2c2e31 0px 0px 10px;
+  height: 180px;
+}
+
+.project_link {
+  color: #e2b714;
+  text-decoration: none;
+}
+
+.project_link:hover {
+  color: #d1d0c5;
+}
+
+.find_me {
+  display: none;
+}
+
+.job_dec {
+  font-size: small;
+  font-style: italic;
+}
+
+/* Default font color */
+.mt-3 a i {
+  color: #d1d0c5; /* Set default color */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social_icons {
+  padding-top: 15px;
+  border-top: 1px solid rgba(226, 183, 20, 0.5); /* Add a border at the top */
+}
+
+/* Hover effect */
+.mt-3 a:hover i {
+  color: #e2b714; /* Set hover color */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    justify-content: center !important; /* Centers the links */
+    text-align: center; /* Ensures proper centering */
+  }
+  .nav-link {
+    border-bottom: 1px solid #2c2e31; /* Add a border at the bottom */
+  }
+  .hero_img {
+    /* width: 40%;
+    height: 70%;
+    margin-bottom: 0px; */
+    display: none;
+  }
+
+  .find_me {
+    display: block;
+  }
+  .title_name {
+    display: none;
+  }
+  .edu_card {
+    height: default;
+  }
+}
+/* Footer */
+footer {
+  background-color: #2c2e31;
+  color: #d1d0c5;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom of the page */
+  position: relative; /* Ensure proper positioning */
+}
+
+.footer-name {
+  color: #e2b714;
+}
+
+.job-title-container {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the text and logo */
+  justify-content: space-between; /* Space between the text and the logo */
+}
+
+.job-title-container .job_title {
+  margin-right: 10px; /* Optional: Space between the text and the logo */
+}
+
+.job-logo {
+  width: 10%; /* Adjust the size of the logo relative to the text */
+  height: auto; /* Maintain the aspect ratio */
+}

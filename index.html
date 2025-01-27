@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imamul Kadir</title>
+
+    <!-- Standard Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- PNG Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+
+    <!-- Manifest (optional, for PWA support) -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold brand-name" href="index.html"
+          >Imamul<sup>💭</sup></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item nav-space">
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-rocket"></i
+              ></a>
+            </li>
+            <li class="nav-item nav-space">
+              <a class="nav-link" target="_blank" href="details.html"
+                ><i class="fa-solid fa-briefcase"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <div class="row mt-5">
+          <!-- Image Section -->
+          <div
+            class="col-md-4 offset-md-2 order-1 order-md-2 text-center text-md-start"
+          >
+            <img
+              src="./assets/images/image.jpg"
+              class="hero-img img-fluid"
+              alt=""
+            />
+          </div>
+
+          <!-- About Section -->
+          <div class="col-md-6 order-2 order-md-1">
+            <h1 class="fw-bold title_text">Imamul Kadir</h1>
+            <p class="fw-light role-text"></p>
+            <p class="details">
+              ...a <em><strong>Filing Lead</strong></em> at
+              <span
+                data-toggle="tooltip"
+                title="A financial technology company specializing in document automation"
+                >Wall Street Docs (WSD)</span
+              >, is a Computer Science graduate with expertise in web
+              development and automation tools. He possesses a strong technical
+              foundation and a passion for creating efficient solutions to every
+              project he undertakes.
+            </p>
+            <p class="details">
+              With extensive experience in <strong>SEC Compliance</strong> and
+              <strong>Filing Operations</strong>, he has honed his skills in
+              managing workflows, ensuring accuracy, and adhering to strict
+              regulatory requirements. His professional journey includes leading
+              teams, optimizing processes, and delivering precise results under
+              tight deadlines.
+            </p>
+            <p class="details">
+              <strong>Want to know more?</strong> Explore his full details and
+              projects
+              <a class="details-link" href="details.html">here...</a>
+            </p>
+            <p class="details">
+              Or, here is my complete
+              <a class="details-link" target="_blank" href="assets/resume.pdf"
+                >Resume <i class="fa-solid fa-file"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center sticky-footer">
+      <!-- Copyright -->
+      <div class="text-center">
+        © 2025 <span class="footer-name">Imamul Kadir</span>. All Rights
+        Reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Array of texts to display
+      const roles = [
+        "Filing Lead",
+        "Software Engineer",
+        "Automation Enthusiast",
+      ];
+
+      // Select the <p> element
+      const roleElement = document.querySelector("p.role-text");
+
+      // Initialize an index to track the current text
+      let index = 0;
+
+      // Function to update the text with animation
+      function updateText() {
+        // Add the 'hide' class to fade out the text
+        roleElement.classList.add("hide");
+
+        // After the fade-out transition, update the text and fade it back in
+        setTimeout(() => {
+          roleElement.textContent = roles[index]; // Update text
+          roleElement.classList.remove("hide"); // Fade back in
+
+          // Move to the next index, looping back to the start
+          index = (index + 1) % roles.length;
+        }, 500); // Match the transition duration (0.5s)
+      }
+
+      // Call updateText every 5 seconds
+      setInterval(updateText, 3000);
+
+      // Set the initial text when the page loads
+      updateText();
+
+      // Initialize Bootstrap tooltips
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

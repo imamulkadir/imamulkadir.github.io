@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume...</title>
+
+    <!-- Standard Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- PNG Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+
+    <!-- Manifest (optional, for PWA support) -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/details.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold brand-name" href="index.html"
+          >Imamul<sup>💭</sup></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item nav-space">
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-rocket"></i
+              ></a>
+            </li>
+            <li class="nav-item nav-space">
+              <a class="nav-link" href="details.html"
+                ><i class="fa-solid fa-briefcase"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container main-container">
+        <div class="row h-100">
+          <!-- Left Section: Fixed -->
+          <div class="col-md-4 left-fixed d-flex flex-column p-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 text-center">
+                  <!-- Profile Picture -->
+                  <img
+                    src="./assets/images/image.jpg"
+                    alt="Profile Picture"
+                    class="img-fluid hero_img"
+                  />
+                  <h2 class="mt-2 title_name">Imamul Kadir</h2>
+                  <h2 class="find_me">Find me on:</h2>
+
+                  <!-- Social Media Icons -->
+                  <div class="mt-3 social_icons">
+                    <a
+                      href="https://www.linkedin.com/imamulkadir"
+                      target="_blank"
+                      ><i class="fab fa-linkedin fa-2x"></i
+                    ></a>
+                    <a href="https://github.com/imamulkadir" target="_blank"
+                      ><i class="fab fa-github fa-2x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section: Scrollable -->
+          <div class="col-md-8 right-scrollable p-4">
+            <h3 id="experience">Experience</h3>
+            <hr style="color: #e2b714" />
+            <div class="container">
+              <div class="row exp_row">
+                <!-- Left Navigation -->
+                <div class="col-12 col-md-3 mb-3">
+                  <ul
+                    class="nav nav-tabs flex-column"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link active"
+                        id="wsd-tab"
+                        data-bs-toggle="tab"
+                        href="#wsd"
+                        role="tab"
+                        aria-controls="wsd"
+                        aria-selected="true"
+                        >WSD - Wall Street Docs</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="apurba-tab"
+                        data-bs-toggle="tab"
+                        href="#apurba"
+                        role="tab"
+                        aria-controls="apurba"
+                        aria-selected="false"
+                        >Apurba Technologies Ltd.</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="analyst-tab"
+                        data-bs-toggle="tab"
+                        href="#analyst"
+                        role="tab"
+                        aria-controls="analyst"
+                        aria-selected="false"
+                        >IMPIT Ltd.</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Right Tab Content -->
+                <div class="col-12 col-md-9">
+                  <div class="tab-content" id="myTabContent">
+                    <!-- WSD - Wall Street Docs -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="wsd"
+                      role="tabpanel"
+                      aria-labelledby="wsd-tab"
+                    >
+                      <div class="job-title-container">
+                        <h6 class="job_title">Filing Lead</h6>
+                        <img
+                          src="./assets/images/wsd.png"
+                          alt="Company Logo"
+                          class="job-logo"
+                        />
+                      </div>
+                      <p class="job_dec">June 2024 to till date</p>
+                      <ul>
+                        <li>
+                          Manage and maintain workloads with accurate and
+                          relevant information.
+                        </li>
+                        <li>
+                          Developed an automation tool to simplify the filing
+                          process.
+                        </li>
+                        <li>
+                          Created a PWA to analyze client data and provide
+                          insights.
+                        </li>
+                        <li>
+                          Assign tasks fairly to optimize team productivity.
+                        </li>
+                        <li>
+                          Review and submit files to the SEC on time, meeting
+                          requirements.
+                        </li>
+                        <li>
+                          Train new team members, assign tasks, and monitor
+                          their work.
+                        </li>
+                        <li>
+                          Help team members solve issues for a smooth filing
+                          process.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Apurba Technologies Ltd. -->
+                    <div
+                      class="tab-pane fade"
+                      id="apurba"
+                      role="tabpanel"
+                      aria-labelledby="apurba-tab"
+                    >
+                      <div class="job-title-container">
+                        <h6 class="job_title">Assistant Team Lead</h6>
+                        <img
+                          src="./assets/images/apurba.png"
+                          alt="Company Logo"
+                          class="job-logo"
+                        />
+                      </div>
+                      <p class="job_dec">September 2023 to May 2024</p>
+                      <ul>
+                        <li>
+                          Oversaw the management of critical workloads with
+                          accuracy.
+                        </li>
+                        <li>
+                          Coordinated task assignments to ensure fair
+                          distribution.
+                        </li>
+                        <li>
+                          Reviewed and submitted files to the SEC on time and
+                          accurately.
+                        </li>
+                        <li>
+                          Trained new team members, organized tasks, and tracked
+                          efficiency.
+                        </li>
+                        <li>
+                          Supported team members and resolved issues for smooth
+                          operations.
+                        </li>
+                      </ul>
+                      <div class="job-title-container">
+                        <h6 class="job_title">Filing Specialist</h6>
+                        <img
+                          src="./assets/images/apurba.png"
+                          alt="Company Logo"
+                          class="job-logo"
+                        />
+                      </div>
+                      <p class="job_dec">March 2021 to August 2023</p>
+                      <ul>
+                        <li>
+                          Converted Word documents into web pages for U.S.
+                          banks.
+                        </li>
+                        <li>
+                          Reviewed and edited files for consistency with
+                          originals.
+                        </li>
+                        <li>
+                          Ensured accuracy and compliance during file reviews.
+                        </li>
+                        <li>Converted and edited files for SEC submissions.</li>
+                        <li>
+                          Submitted files to meet regulatory requirements.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Analyst - Business Development -->
+                    <div
+                      class="tab-pane fade"
+                      id="analyst"
+                      role="tabpanel"
+                      aria-labelledby="analyst-tab"
+                    >
+                      <div class="job-title-container">
+                        <h6 class="job_title">
+                          Analyst - Business Development
+                        </h6>
+                        <img
+                          src="./assets/images/impit.png"
+                          alt="Company Logo"
+                          class="job-logo"
+                        />
+                      </div>
+                      <p class="job_dec">November 2020 to February 2021</p>
+                      <ul>
+                        <li>
+                          Analyzed data to generate insights and provide
+                          data-driven recommendations.
+                        </li>
+                        <li>
+                          Communicated daily with U.S. clients to meet
+                          expectations.
+                        </li>
+                        <li>
+                          Handled property preservation tasks for bank-mortgaged
+                          properties.
+                        </li>
+                        <li>
+                          Ensured timely maintenance and reporting for
+                          client-managed properties.
+                        </li>
+                        <li>
+                          Collaborated with teams to streamline processes for
+                          property preservation.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <!-- Education -->
+              <h3 id="education">Education</h3>
+              <hr style="color: #e2b714" />
+              <div class="row">
+                <!-- B.Sc. in Computer Science and Engineering -->
+                <div class="col-md-6 mb-4">
+                  <div class="card edu_card">
+                    <div class="card-body">
+                      <h5 class="card-title">Bachelor of Science (B.Sc.)</h5>
+                      <p class="card-text">
+                        <strong>Major:</strong> Computer Sceince and Engineering
+                        <br />
+                        <strong>Institution:</strong> Daffodil International
+                        University <br />
+                        <strong>Class of:</strong> 2020
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Higher Secondary Certificate (H.S.C) -->
+                <div class="col-md-6 mb-4">
+                  <div class="card edu_card">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Higher Secondary Certificate (H.S.C)
+                      </h5>
+                      <p class="card-text">
+                        <strong>Group:</strong> Science <br />
+                        <strong>Institution:</strong> Notre Dame College <br />
+                        <strong>Class of:</strong> 2014
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <!-- Projects -->
+              <h3 id="education">Projects</h3>
+              <hr style="color: #e2b714" />
+              <div class="row">
+                <div class="col-md-12">
+                  <ul>
+                    <li>
+                      <h6>
+                        InnoForge - A platform for innovation and collaboration.
+                        <a
+                          href="https://github.com/imamulkadir/InnoForge"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        HTML_CC - A custom HTML content generator for web
+                        applications.
+                        <a
+                          href="https://github.com/imamulkadir/HTML_CC"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        NextJS CRUD - A simple CRUD application built with
+                        Next.js.
+                        <a
+                          href="https://github.com/imamulkadir/nextjs-crud"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        NextJs Ecommerce - An eCommerce platform built with
+                        Next.js and React.
+                        <a
+                          href="https://github.com/imamulkadir/NextJs_Ecommerce"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        Covid19 Self Assessment - A web application for
+                        self-assessing COVID-19 symptoms.
+                        <a
+                          href="https://github.com/imamulkadir/Covid19_Self_Assessment"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        React Weather App - A weather app built with React and a
+                        weather API.
+                        <a
+                          href="https://github.com/imamulkadir/ReactWeatherApp"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        Text Recognition Using ML Kit - Text recognition
+                        application using ML Kit for Android.
+                        <a
+                          href="https://github.com/imamulkadir/TextRecognitionUsing_MLKIT"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        Students & Employee Attendance System - A system for
+                        tracking student and employee attendance.
+                        <a
+                          href="https://github.com/imamulkadir/Students-Employe-Attendance-System"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        aEye Web - A web-based project for aiding visually
+                        impaired navigation.
+                        <a
+                          href="https://github.com/imamulkadir/aEye-Web"
+                          class="project_link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </h6>
+                    </li>
+                    <hr />
+                    <h6>
+                      Explore more projects on my
+                      <a
+                        href="https://github.com/imamulkadir"
+                        class="project_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub profile <i class="fa-brands fa-github"></i>
+                      </a>
+                    </h6>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center sticky-footer">
+      <!-- Copyright -->
+      <div class="text-center">
+        © 2025 <span class="footer-name">Imamul Kadir</span>. All Rights
+        Reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Array of texts to display
+      const roles = [
+        "Filing Lead",
+        "Software Engineer",
+        "Automation Enthusiast",
+      ];
+
+      // Select the <p> element
+      const roleElement = document.querySelector("p.role-text");
+
+      // Initialize an index to track the current text
+      let index = 0;
+
+      // Function to update the text with animation
+      function updateText() {
+        // Add the 'hide' class to fade out the text
+        roleElement.classList.add("hide");
+
+        // After the fade-out transition, update the text and fade it back in
+        setTimeout(() => {
+          roleElement.textContent = roles[index]; // Update text
+          roleElement.classList.remove("hide"); // Fade back in
+
+          // Move to the next index, looping back to the start
+          index = (index + 1) % roles.length;
+        }, 500); // Match the transition duration (0.5s)
+      }
+
+      // Call updateText every 5 seconds
+      setInterval(updateText, 3000);
+
+      // Set the initial text when the page loads
+      updateText();
+
+      // Initialize Bootstrap tooltips
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
