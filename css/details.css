@@ -50,7 +50,7 @@ body {
   color: #d1d0c5;
   border-left: 1px solid #e2b714;
   box-shadow: #2c2e31 0px 0px 10px;
-  height: 180px;
+  height: max-content;
 }
 
 .project_link {
@@ -140,4 +140,21 @@ footer {
 .job-logo {
   width: 10%; /* Adjust the size of the logo relative to the text */
   height: auto; /* Maintain the aspect ratio */
+}
+
+.publish_details {
+  margin-bottom: 2px;
+}
+
+.doi_link {
+  text-decoration: none;
+  color: #e2b714;
+}
+
+.doi_link:hover {
+  color: #d1d0c5;
+}
+
+h5 span {
+  font-size: small;
 }
