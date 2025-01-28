@@ -38,6 +38,11 @@ body {
   width: 550px;
   height: auto;
   border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero_img:hover {
+  transform: scale(1.05);
 }
 
 .edu_card {
