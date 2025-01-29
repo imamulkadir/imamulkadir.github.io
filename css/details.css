@@ -181,7 +181,31 @@ h5 span {
   z-index: 1000; /* Ensure it's above other elements */
 }
 
+.scroll-to-top:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1); /* Slight zoom-in effect */
+  background-color: #e2b714; /* Change color on hover */
+  color: #2c2e31;
+}
+
 .scroll-to-top.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Project Link Hover Effect */
+.project_link i {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.project_link:hover i {
+  transform: scale(1.4); /* Slight zoom-in effect */
+}
+
+.nav-link i {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-link:hover i {
+  transform: scale(1.4); /* Slight zoom-in effect */
 }

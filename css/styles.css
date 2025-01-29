@@ -31,6 +31,14 @@ body {
   color: #e2b714;
 }
 
+.nav-link i {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-link:hover i {
+  transform: scale(1.4); /* Slight zoom-in effect */
+}
+
 .nav-space {
   padding: 0 0.5rem;
 }
